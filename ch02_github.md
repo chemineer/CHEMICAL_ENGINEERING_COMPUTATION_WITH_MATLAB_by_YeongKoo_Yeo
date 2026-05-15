@@ -49,6 +49,7 @@ Find the temperature at each node x1, x2, x3, and x4 using the conjugate gradien
 
 ### Example 2.5 Two-Dimensional Heat Transfer
 Consider the cross section of a rectangular flue with steady heat conduction along the x- and y-axes as shown in Figure 2.2. Since both ends of the section are symmetrical, we can consider only 1/8 of the section. From this section, we can construct a node network consisting of small squares. 
+
 ![그림](rect_flue.png)
 
 A heat balance on node 4 gives 
@@ -57,7 +58,7 @@ q_4=\frac{kA}{\Delta x}(T_5-T_4)+\frac{kA}{\Delta x}(T_9-T_4)+\frac{kA}{\Delta y
 ```
 Since each node is square, ∆x = ∆y , and by rearranging we have 
 $\frac{q_4\Delta x}{kA}=2T_5-4T_4+2T_9$
-At steady state, $q_4/ kA$ is assumed to be zero. Find temperatures T4, T5 ..., T12 at nodes 4 through 12. 
+At steady state, $q_4/kA$ is assumed to be zero. Find temperatures T4, T5 ..., T12 at nodes 4 through 12. 
 
 ### Example 2.6 Solution of a Polynomial Equation 
 Find the roots of the following equation: 
@@ -71,7 +72,7 @@ In this equation, v  =( V/n )(n: number of moles), R  =0.082054 liter·atm /( mo
 ### Example 2.8 Reduction of an Iron Ore 
 In a reduction experiment of iron ore by hydrogen, the time t (sec) spent in the reduction zone is given by the function of unreacted particle core r (cm) as 
 $t =9.496×10^3(1 -12r^2 +16r^3 )$ 
-Find r when t  =30 min using the bisection, secant, and Newton-Raphson methods. As the initial search interval, use [0,0.5], and as an initial guess, let x0 =0.3  .  
+Find r when t = 30 min using the bisection, secant, and Newton-Raphson methods. As the initial search interval, use [0,0.5], and as an initial guess, let x0 =0.3.  
 
 ### Example 2.9 Nonlinear Equation System  
 
@@ -110,7 +111,7 @@ P=\frac{RT}{(V-b)}-\frac{a}{V(V+b)\sqrt{T}}
 
 where $a = 0.42748 R^2 T_c^{5/2} /P_c$, $b = 0.08664 RT_c /P_c$
 
-Tc and Pc denote the critical temperature (K) and critical pressure (atm), respectively, and V is the specific volume (liter /mol ). Find the specific volume of 1-butene at  415 K and  21 MPa. The gas constant is R =0.082054 liter·atm/(mol·K) and the critical properties of 1-butene are Tc = 419.6K  and Pc = 40.2 MPa. 
+Tc and Pc denote the critical temperature (K) and critical pressure (atm), respectively, and V is the specific volume (liter /mol ). Find the specific volume of 1-butene at  415 K and  21 MPa. The gas constant is R =0.082054 liter·atm/(mol·K) and the critical properties of 1-butene are Tc = 419.6K and Pc = 40.2 MPa. 
 
 ### Example 2.14 Bubble Point of a Mixture 
 The vapor pressure $P_{sat} (mmHg)$ of benzene and toluene can be represented by the Antoine equation: 
@@ -163,8 +164,7 @@ tc = [
 ]
 
 ### Example 2.18 Normal Probability
-We can define the normal probability density f(x) with μ  =  0 and σ  =  1 using the built − in 
-function. Let z = (x- μ)/σ . 
+We can define the normal probability density f(x) with μ  =  0 and σ  =  1 using the built − in function. Let z = (x- μ)/σ . 
 (1) Determine the probability of z assuming any value between -0.8 and +0.8. 
 (2) What is the probability of z lying between -0.8 and +0.8? 
 (3) Determine the probability of observing z > 2.  
@@ -178,13 +178,13 @@ In a sequence of light absorbance experiments to determine the concentration of 
 (3) Generate a 3×3 matrix z of random numbers distributed uniformly between 3 and 5.  
 
 ### Example 2.21 Least-Squares Polynomial Fitting 
-The data shown in below Table were taken in an isothermal batch reactor where reactant A is 
-decomposed to product B. Fit 2nd-, 3rd-, and 4th-order polynomials to the data. 
+The data shown in below Table were taken in an isothermal batch reactor where reactant A is decomposed to product B. Fit 2nd-, 3rd-, and 4th-order polynomials to the data.
+
 ![그림](T204.png)
 
 ### Example 2.22 Reaction Temperature Profile 
-Below Table shows measurements of reaction temperature versus time. Determine the 1st-, 2nd-, 
-and 4th-order polynomials to represent this data.  
+Below Table shows measurements of reaction temperature versus time. Determine the 1st-, 2nd-, and 4th-order polynomials to represent this data.  
+
 ![그림](T205.png)
 
 ### Example 2.23 Virial Coefficients
@@ -193,11 +193,11 @@ Below Table shows the density (ρ) of N2 as a function of pressure(P ) at T= 200
 Z=\frac{P}{ρRT}=1+bρ+Cρ^2+Dρ^3
 ```
 where R is the gas constant (=0.08206 liter atm /(mol K )).  
+
 ![그림](T206.png)
 
 ### Example 2.24 Michaelis-Menten Enzyme Kinetics 
-An enzyme behaves as a catalyst in a living cell. To represent enzyme-catalyzed reactions, the 
-Michaelis-Menten equation is widely used:
+An enzyme behaves as a catalyst in a living cell. To represent enzyme-catalyzed reactions, the Michaelis-Menten equation is widely used:
 ```math
 r=\frac{a[S]}{b+[S]}
 ```
@@ -207,9 +207,8 @@ r is the reaction rate
 a is the maximum initial reaction rate 
 b is a constant given by combination of rate constants 
 
-Table below shows experimental data of reaction rates versus substrate concentrations. Assuming 
-that reaction rates can be represented by the Michaelis-Menten equation, determine parameters a
-and b of the equation.
+Table below shows experimental data of reaction rates versus substrate concentrations. Assuming that reaction rates can be represented by the Michaelis-Menten equation, determine parameters a and b of the equation.
+
 ![그림](T208.png)
 
 ### Example 2.25 Vapor Pressure by Antoine Equation
@@ -223,6 +222,7 @@ T is temperature(°C)
 A, B and C are parameters 
 
 Use the vapor pressure data given in Table below to find parameters A, B, and C. 
+
 ![그림](T209.png)
 
 ### Example 2.26 Nonlinear Regression by Least Squares  
@@ -231,6 +231,7 @@ Assume that the experimental data shown in Table below can be represented by a n
 v=\frac{Ae^{-t}}{1+Bt}
 ```
 Use the least-squares method and the built-in function nlinfit to estimate A and B. Compare the nonlinear model and the results of nonlinear regressions by plotting the fitting curves and data on the same graph. 
+
 ![그림](T210.png)
 
 ### Example 2.27 Nonlinear Regression 
@@ -239,15 +240,17 @@ A wooden slab with thickness z  =0.03 m is dried from both sides by hot air. Tab
 x(t)=\frac{8x_0}{\pi ^2}(e^{-Dt(\frac{\pi }{2x})^2}+\frac{1}{9}e^{-9Dt(\frac{\pi }{2x})^2})
 ```
 where x0 is the initial free moisture of the wood and D ( m2/hr ) is the diffusivity of water in the wood. Estimate x0 and D .
+
 ![그림](T211.png)
 
 ### Example 2.28 Determination of Interpolating 2nd-Order Polynomial 
 Table below shows entropy data of saturated steam at three different temperatures. Identify the 2nd-order polynomial that best fits the data, and estimate the entropy at T =373.15 K using this polynomial.
+
 ![그림](T213.png)
 
 ### Example 2.29 Isothermal Batch Reactor
-The data shown below were taken in an isothermal batch reactor where reactant A is 
-decomposed to product B. Determine CA at t(min )=8, 15, 25 and 32 using Lagrange, Newton, and cubic spline interpolation methods. 
+The data shown below were taken in an isothermal batch reactor where reactant A is decomposed to product B. Determine CA at t(min )=8, 15, 25 and 32 using Lagrange, Newton, and cubic spline interpolation methods. 
+
 ![그림](T215.png)
 
 ### Example 2.30 Polynomial Regression 
@@ -256,19 +259,23 @@ Table below presents the enthalpy of saturated steam versus temperature. Determi
 ![그림](T216.png)
 
 ### Example 2.31 Cubic Spline Interpolation 
-Table below shows experimental data on a pressure drop (kPa)according to flow rates (liter/ sec) in a filter. Perform cubic spline interpolation .
+Table below shows experimental data on a pressure drop (kPa)according to flow rates (liter/ sec) in a filter. Perform cubic spline interpolation.
+
 ![그림](T217.png)
 
 ### Example 2.32 One-Dimensional Interpolation 
 Determine y at x = 0.45 using the benzene-toluene equilibrium data shown in Table below. Try various interpolation methods. 
+
 ![그림](T219.png)
 
 ### Example 2.33 One-Dimensional Fitting 
 Table below shows the time series of measurements of reaction temperature. Fit these data with the pchip (piecewise cubic Hermite) option.
+
 ![그림](T220.png)
 
 ### Example 2.34 One-Dimensional Fitting of Heat Capacity Data
 Table below shows the heat capacity of nitrogen (Cp  ) at 1 atm. Determine Cp at T=580 K . Try various one-dimensional interpolation methods. 
+
 ![그림](T221.png)
 
 ### Example 2.35 Two-Dimensional Interpolation 
@@ -277,13 +284,14 @@ Temperatures are measured at various points on a heated metal plate (Table below
 ![그림](T222.png)
 
 ### Example 2.36 Interpolation of Humidity and Dew Point 
-Table below presents the absolute humidity (H) and the dew point (DP) of the air as a function of relative humidity (RH). Estimate H and DP when RH = 58.4 and T(dry bulb temperature) = 46.8℃ 
-using two-dimensional piecewise cubic spline interpolation.  
+Table below presents the absolute humidity (H) and the dew point (DP) of the air as a function of relative humidity (RH). Estimate H and DP when RH = 58.4 and T(dry bulb temperature) = 46.8℃ using two-dimensional piecewise cubic spline interpolation.  
+
 ![그림](T223.png)
 
 ### Example 2.37 Two-Dimensional Interpolation of Steam Table Data
 Table below shows the enthalpy H(kJ/kg) of superheated steam excerpted from the steam table. 
 Estimate H at T = 380°C and P = 260 kPa. 
+
 ![그림](T224.png)
 
 ### Example 2.38 Differentiation by diff  
@@ -292,7 +300,6 @@ Differentiate the function
 f(x)=0.3+20x-180x^2+650x^3-880x^4+360x^5
 ```
 from x = 0 to 1 using the diff function. Compare your results with the exact solution
-
 
 ### Example 2.39 : Differentiation of CO2Concentration by diff
 In a transient mass transfer of CO2 through a membrane the concentration profile of CO2 at a certain time  across the membrane wall is represented by the equation
@@ -319,6 +326,7 @@ Rm is the resistance of the filter medium to filtrate flow
 
 Table below shows data for filtration of CaCO3 slurry in water at 298 K at a constant pressure (-∆P) of 3×105kg/(m∙sec2). Determine α(m/kg) and Rm (m-1) by using below Table and the data after it. 
 Data: A =0.04 m2, cs=20 kg/m3 , μ=8.937×10-4 kg/(m sec ), -∆P=3×10 5 kg/(m sec2 )
+
 ![그림](T225.png)
 
 ### Example 2.41 Differentiation by gradient 
@@ -337,6 +345,7 @@ using the trapezoidal rule and the Simpson 1/3 rule.
 
 ### Example 2.43 Use of trapz and cumtrapz
 Table below shows a series of time spot measurements of the velocity of a falling sphere. Determine the distance traveled when t  =2.5 sec. Find the cumulative distance traveled at each time spot. 
+
 ![그림](T226.png)
 
 ### Example 2.44 Use of integral, quad, and quadl 
@@ -349,6 +358,7 @@ Estimate $\int_{a}^{b}f(x)dx$ when a=0, b=1, q=0.2, r=0.7and s= 4. Use the built
 ### Example 2.45 Interpolation and Numerical Integration
 Table below shows the heat capacity Cp (J/(mol∙℃)) of a gas as a function of temperature t(℃). 
 Compute the enthalpy change $∆H( J)= n\int_{t_1}^{t_2}C_p(t)dt$ for n = 6.5 mol of this gas heated from t1 = 55℃ to t2 = 185℃. 
+
 ![그림](T228.png)
 
 ### Example 2.46 Double integral 
@@ -364,25 +374,25 @@ f(x,y)=3xy+x-1.2x^2-3y^2+25
 ### Example 2.47 Numerical Solution of ODE 
 Find the solution of the differential equation
 ```math
- \frac{dy}{dt}=5e^{0.6t}-2y, y(0)=1.5
+\frac{dy}{dt}=5e^{0.6t}-2y, y(0)=1.5
 ```
 using the explicit Euler method and the 4th-order Runge-Kutta method. The number of sub intervals is n=5. 
 
 ### Example 2.48 Solution of an ODE 
 Solve
 ```math
- \frac{dy}{dt}=e^{-t}, y(0)=-1
+\frac{dy}{dt}=e^{-t}, y(0)=-1
 ```
 from t = 0 to 1. 
 
 ### Example 2.49 van der Pol Equation 
 The van der Pol equation can be expressed as
 ```math
- \frac{d^2y_1}{dt^2}-μ(1-y_1^2)\frac{dy_1}{dt}+y_1=0
+\frac{d^2y_1}{dt^2}-μ(1-y_1^2)\frac{dy_1}{dt}+y_1=0
 ```
 This equation can be transformed into a set of 1st-order differential equations as follows: 
 ```math
- \frac{dy_1}{dt}=y_2, \frac{dy_2}{dt}=-y_1+μ(1-y_1^2)y_2
+\frac{dy_1}{dt}=y_2, \frac{dy_2}{dt}=-y_1+μ(1-y_1^2)y_2
 ```
 Plot the changes of y1 and y2 with respect to time t from t = 0 to 25. μ = 1 and the initial conditions 
 are y1(0) = y2(0) = 1. 
@@ -400,7 +410,9 @@ A plug-flow reactor is used to carry out the reaction A -> B. The reaction rate 
 \frac{dC_A}{dz}=(\frac{A_c}{q})\frac{dF_A}{dV}=-(\frac{A_c}{q})\frac{kC_A}{\sqrt{1+k_rC_A^2}}
 ```
 where z is the length of the reactor, V is the reactor volume, q is the inlet flow rate, Ac is the cross-sectional area of the reactor, and k and kr are kinetic parameters. The initial concentration of A is C_A0 =1 mol/m3, the inlet flow rate is q =0.12 m3/sec , A_c =0.26 m2, and the kinetic parameters are k =2.1 sec-1 and k_r = 0.98 mol2/m6. F_A is given by F_A = F_A0(1-x_A ) where F_A0 = qC_A0. 
+
 (1) Generate the profiles of conversion and concentration of A for 0 ≤ z ≤ 0.5m . 
+
 (2) Find the reactor volume required for 80% conversion of A. 
 
 ### Example 2.52 Penicillin Production Reaction
