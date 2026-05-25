@@ -71,7 +71,7 @@ In this equation, v  =( V/n )(n: number of moles), R  =0.082054 liter·atm /( mo
 ### Example 2.8 Reduction of an Iron Ore 
 In a reduction experiment of iron ore by hydrogen, the time t (sec) spent in the reduction zone is given by the function of unreacted particle core r (cm) as 
 $t =9.496×10^3(1 -12r^2 +16r^3 )$ 
-Find r when t = 30 min using the bisection, secant, and Newton-Raphson methods. As the initial search interval, use [0,0.5], and as an initial guess, let x0 =0.3.  
+Find r when t = 30 min using the bisection, secant, and Newton-Raphson methods. As the initial search interval, use [0,0.5], and as an initial guess, let $x_0$ =0.3.  
 
 ### Example 2.9 Nonlinear Equation System  
 
@@ -100,7 +100,7 @@ The Colebrook equation is given by
 
 $\frac{1}{\sqrt{f}}=-0.86 ln(\frac{\varepsilon /D}{3.7}+\frac{2.51}{N_{Re}\sqrt{f}})$
 
-Find the friction factor f for $N_Re = 6.5 × 10^4$ and ε/D = 0.00013. As the first guess for f , use f0 = 0.1. 
+Find the friction factor f for $N_{Re} = 6.5 × 10^4$ and ε/D = 0.00013. As the first guess for f , use {f_0} = 0.1. 
 
 ### Example 2.13 SRK Equation of State 
 The Soave-Redlich-Kwong (SRK) equation of state is given by
@@ -119,9 +119,10 @@ $ln P_{sat}=A-\frac{B}{t(°C)+C}$
 
 Determine the bubble point temperature t (°C) of a mixture containing benzene and toluene at a pressure P = 1 atm. Pis given by 
 $P(mmHg)=x_{B} P_{sat.B}(t)+x_{T}P_{sat.T}(t)-P$
-where xB and xT are mole fractions of benzene and toluene, respectively. 
-Data: xB  =0.4;xT =0.6; benzene: A=15.90085, B=2788.507, C=220.790; toluene: 
-A=16.01066, B=3094.543, C=219.377. 
+where $x_B$ and $x_T$ are mole fractions of benzene and toluene, respectively. 
+Data: $x_B$  =0.4;$x_T$ =0.6; 
+benzene: A=15.90085, B=2788.507, C=220.790; 
+toluene: A=16.01066, B=3094.543, C=219.377. 
 
 ### Example 2.15 A System of Nonlinear Equations 
 Find the zeros of the following three equations: 
@@ -139,11 +140,11 @@ where
 ni is the number of moles of component i
 c is the total number of components 
 R is the gas constant 
-Gi0 is the Gibbs energy of pure component i at temperature T
-Oxygen, hydrogen, and carbon balances should be set to find ni. 
-Oxygen: f1 = 2n4+n5+2n6+n8-4
-Hydrogen: f2 =4n1+4n2+2n3+2n7+2n8+6n9-14
-Carbon: f3 =n1+2n2+2n3+n4+n5+2n9-2
+$G_i^0$ is the Gibbs energy of pure component i at temperature T
+Oxygen, hydrogen, and carbon balances should be set to find $n_i$. 
+Oxygen: f1 = $2n_4+n_5+2n_6+n_8-4$
+Hydrogen: f2 = $4n_1+4n_2+2n_3+2n_7+2n_8+6n_9-14$
+Carbon: f3 = $n_1+2n_2+2n_3+n_4+n_5+2n_9-2$
 These balance equations are constraints that can be introduced into the objective function using Lagrange multipliers λ1, λ2, and λ3. The extended objective function is given by
 
 $min_{n_i,\lambda _i}F=\sum_{i=1}^{c}n_i(\frac{G_i^0}{RT}+ln\frac{n_i}{\sum n_i})+\sum_{j=1}^{3}\lambda _jf_j$
@@ -248,7 +249,7 @@ Table below shows entropy data of saturated steam at three different temperature
 ![그림](T213.png)
 
 ### Example 2.29 Isothermal Batch Reactor
-The data shown below were taken in an isothermal batch reactor where reactant A is decomposed to product B. Determine CA at t(min )=8, 15, 25 and 32 using Lagrange, Newton, and cubic spline interpolation methods. 
+The data shown below were taken in an isothermal batch reactor where reactant A is decomposed to product B. Determine $C_A$ at t(min )=8, 15, 25 and 32 using Lagrange, Newton, and cubic spline interpolation methods. 
 
 ![그림](T215.png)
 
@@ -305,7 +306,7 @@ In a transient mass transfer of CO2 through a membrane the concentration profile
 
 $C(x)=-1.3 \times 10^6x^4+7.1\times 10^3x^3-14x^2-0.364x+0.001$
 
-where C (kgmol /m3 ) is the concentration of CO2 and x(m ) is the distance from the center of the membrane. The mass transfer flux N_CO2 kgmol  /( sec m2) at x(m )from the center of the membrane is given by 
+where C (kgmol /m3 ) is the concentration of CO2 and x(m ) is the distance from the center of the membrane. The mass transfer flux $N_{CO2}$ kgmol  /( sec m2) at x(m )from the center of the membrane is given by 
 
 $N_{CO2}=-D\frac{dC(x)}{dx}$
 
@@ -324,7 +325,7 @@ cs is the slurry concentration
 Rm is the resistance of the filter medium to filtrate flow 
 
 Table below shows data for filtration of CaCO3 slurry in water at 298 K at a constant pressure (-∆P) of 3×105kg/(m∙sec2). Determine α(m/kg) and Rm (m-1) by using below Table and the data after it. 
-Data: A =0.04 m2, cs=20 kg/m3 , μ=8.937×10-4 kg/(m sec ), -∆P=3×10 5 kg/(m sec2 )
+Data: A =0.04 m2, cs=20 kg/m3 , μ =$8.937×10^{-4}$ kg/(m sec ), -∆P=$3×10^5$ kg/(m sec2 )
 
 ![그림](T225.png)
 
@@ -401,7 +402,7 @@ Figure 2.24 shows a series of three well-mixed tanks. From mass balance equation
 
 $\frac{dV_1}{dt}=q_0+m-q_1, V_1\frac{dx_1}{dt}=q_0(x_0-x_1), V_2\frac{dx_2}{dt}=q_1(x_1-x_2), V_3\frac{dx_3}{dt}=q_2(x_2-x_3) $
 
-where x i( =1,2,3) is the concentration (mol  /liter ) of the solution contained in the tank i. Under normal steady-state operation, m is maintained at 0 and q i( =1,2,3) is kept constant. At a certain time (t=0), m is suddenly increased to 12 liter /min . Plot the concentrations in the three tanks from t=0 to 2. The initial conditions are x mol liter =0.15 / 0 and q litermin =15 / 0 , and the initial volume of each tank is 20 liter. 
+where $x_i$( i =1,2,3) is the concentration (mol  /liter ) of the solution contained in the tank i. Under normal steady-state operation, m is maintained at 0 and $q_i$( i =1,2,3) is kept constant. At a certain time (t=0), m is suddenly increased to 12 liter /min . Plot the concentrations in the three tanks from t=0 to 2. The initial conditions are $x_0$ =0.15 mol /liter and $q_0$ =15 liter/min , and the initial volume of each tank is 20 liter. 
 
 ### Example 2.51 Plug-Flow Reactor
 A plug-flow reactor is used to carry out the reaction A -> B. The reaction rate is known to be represented by a Langmuir-Hinshelwood model given by
@@ -419,7 +420,7 @@ Penicillin is produced in a batch reactor by fermentation. The reaction model is
 
 $\frac{dx_1}{dt}=a_1x_1-\frac{a_1}{a_2}x_1^2, \frac{dx_2}{dt}=a_3x_1$
 
-where x1 is the dimensionless cell concentration and x2 is the dimensionless penicillin concentration. From experiments, it was found that a_1 =13.2, a_2 =0.95 and a_3 =1.76 . At t=0, $x_1(0)$=0.028 and $x_2(0)$=0.0 . Generate profiles of x1 and x2 as a function of dimensionless time t ( 0 ≤ t ≤ 1). 
+where x1 is the dimensionless cell concentration and x2 is the dimensionless penicillin concentration. From experiments, it was found that $a_1$ =13.2, $a_2$ =0.95 and $a_3$ =1.76 . At t=0, $x_1(0)$=0.028 and $x_2(0)$=0.0 . Generate profiles of $x_1$ and $x_2$ as a function of dimensionless time t ( 0 ≤ t ≤ 1). 
 
 ### Example 2.53 Growth of a Biomass from Substrate
 A biological process involving the growth of a biomass from substrate can be represented as
@@ -444,7 +445,7 @@ Tp(◦R) is the temperature of the reactant at the surface of catalyst
 Pp(atm) is the partial pressure of the reactant at the surface of catalyst 
 K is the rate constant (dimensionless) 
 τ is time (dimensionless) 
-and the subscript e is the inlet condition. The parameters and constants used in the model equations are H_g =320, T_e=600, H_T=266.67, H_W=1.6, T_W=720, F=8000, A=0.17142, C =205.74, P_e=0.1 
+and the subscript e is the inlet condition. The parameters and constants used in the model equations are $H_g$ =320, $T_e$=600, $H_T$=266.67, $H_W$=1.6, $T_W$=720, F=8000, A=0.17142, C =205.74, $P_e$=0.1 
 Solve the differential equations from τ = 0 to 1500 and plot the changes of dependent variables. 
 Initial conditions are P(0) = 0.1, T(0) = 600, Pp = 0, and Tp = 761. 
 
@@ -461,20 +462,20 @@ A metal rod of length 1 m is placed between two tanks, one containing boiling wa
 $\frac{d^2T}{dx^2}=\frac{4h}{kD}(T-T_a), T(0)=100, T(1)=0$
 
 where x is the length of the rod, h is the heat transfer coefficient between the rod and air, k is the thermal conductivity of the rod, D is the diameter of the rod, and Ta is the ambient temperature. 
-Data are given as h= 50 W/(m2 K), D = 0.04 m, k = 390 W/(m K), and T_a = 25°C. Produce the temperature profile as a function of x. 
+Data are given as h= 50 W/(m2 K), D = 0.04 m, k = 390 W/(m K), and $T_a$ = 25°C. Produce the temperature profile as a function of x. 
 
 ### Example 2.57 Heterogeneous Reactor
 A 1st-order reaction A -> B is carried out in a heterogeneous reactor. The reactor model can be represented as
 
-$u\frac{dC_A}{dz}=-k_ga(C_A-C_As), k_g(C_A-C_As)-kC_As=0$
+$u\frac{dC_A}{dz}=-k_ga(C_A-C_{As}), k_g(C_A-C_{As})-kC_As=0$
 
 where 
 u is the inlet velocity 
 a is the surface area to volume ratio 
-C_As is the surface concentration 
-k_g is the mass transfer coefficient 
+$C_{As}$ is the surface concentration 
+$k_g$ is the mass transfer coefficient 
 
-Produce the axial profiles of concentration C_A and C_As in the reactor when a = 200, k = 0.02, k_g = 0.01, u = 1, C_A0 = 1, and L(reactor length)  = 1. 
+Produce the axial profiles of concentration $C_A$ and $C_{As}$ in the reactor when a = 200, k = 0.02, $k_g$ = 0.01, u = 1, $C_{A0}$ = 1, and L(reactor length)  = 1. 
 
 ### Example 2.58 Temperature Distribution in a Rod
 The temperature distribution in a rod of unit length can be given by 
@@ -484,7 +485,7 @@ $\frac{\partial u}{\partial t}=\alpha \frac{\partial ^2u}{\partial x^2}, (0≤t�
 The initial and boundary conditions are given by 
 $u(x,0)=x^3-2x^2+1.5x (0≤x≤1)$,
 $u(0,t)=0, u(1,t)=2, (0≤t≤t_f)$
-Plot the temperature profile in the rod using t_f =0.1, α=0.8, m=50, and n=10 . 
+Plot the temperature profile in the rod using $t_f$ =0.1, α=0.8, m=50, and n=10 . 
 
 ### Example 2.59 Motion of a Vibrating String
 The motion of a vibrating string with both ends held fixed can be described by 
@@ -494,7 +495,7 @@ $\frac{\partial^2 u}{\partial t^2}=\alpha \frac{\partial ^2u}{\partial x^2}, (0�
 The initial and boundary conditions are given by 
 $u(x,0)=x(1-x), \frac{\partial u(x,0)}{\partial t=0} (0≤x≤1)$,
 $u(0,t)=0, u(1,t)=0, (0≤t≤t_f)$
-Plot the position profile of the string using t_f =1, α=1, m=40 and n=20 . 
+Plot the position profile of the string using $t_f$ =1, α=1, m=40 and n=20 . 
 
 ### Example 2.60 Steady-State Temperature Distribution over a Square Plate
 The steady-state temperature distribution over a square plate can be described by the Laplace equation 

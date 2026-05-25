@@ -33,7 +33,7 @@ $P_v^{sat}(V_G-V_L)=\int_{V_L}^{V_G}pdV$
 $V_G$, and $V_L$, are the roots of the nonlinear equation 
 $f(V)=\frac{RT}{V-b}-\frac{a}{V^2+2bV-b^2}-P$
 
-Determine $P_v^{sat}$, for CO2, by applying appropriate numerical methods, and compare the result with that obtained from the extended Antoine equation 
+Determine $P_v^{sat}$, for CO2, by applying appropriate numerical methods, and compare the result with that obtained from the `extended Antoine equation` 
 $log P_v=A+\frac{B}{T}+c log T +DT(P_v: mmHg, T :K)$
 
 For CO2, $T_c$ =304.2 K, $P_c$ =73.83 bar, ω=0.224, A =47.544, B = -1792.2, C = -16.559, and D =0.013833.  
@@ -53,18 +53,24 @@ given by $A = -4.224, B =0.3063, C= -1.586×10^{-4}, and D=3.215×10^{-8}$.
 
 ### Example 4.9  Enthalpy of Mixture 
 Estimate the liquid-phase enthalpy of the mixture of methane(1)/ethane(2)/propane(3) at -158 K, and 6.8947 bar. 
-The liquid-phase mole fractions of components are x1 = 0.419, x2 = 0.3783, x3 = 0.2027, and the properties of each component are shown in Table 4.6 ( ∆Hf, ∆Gf : J mol).
-Table 4.7 shows coefficients of the ideal gas heat capacity relation for each component. 
+The liquid-phase mole fractions of components are x1 = 0.419, x2 = 0.3783, x3 = 0.2027, and the properties of each component are shown in Table below ( ∆Hf, ∆Gf : J mol).
+Another Table shows coefficients of the ideal gas heat capacity relation for each component. 
+
+![그림](T406.png)
+
+![그림](T407.png)
 
 ### Example 4.10  Fugacity of Acetylene Gas
 Find the fugacity of acetylene at 250 K, and 10 bar.
 For acetylene, $T_c$ = 308.3 K, $P_c$ = 6.139 MPa ( = 61.39 ), and w = 0.187
 
 ### Example 4.11  Fugacity Coefficients in a Mixture
-Determine the fugacity coefficients of all components in a nitrogen(1)/methane(2) mixture by the Peng-Robinson equation at 100 K, and 0.4119 MPa (4.119 bar ). In this mixture, the mole fraction of nitrogen is y1 =0.958 . For nitrogen, $T_c1$ =126.1 K , $P_c1$ =3.394 MPa (33.94 bar ) , and w1 = 0.04 ; and for methane, $T_c2$ =190.6 K , $P_c2$ =4.604 MPa (46.04 bar ) , and w2 =0.011 . 
+Determine the fugacity coefficients of all components in a nitrogen(1)/methane(2) mixture by the Peng-Robinson equation at 100 K, and 0.4119 MPa (4.119 bar ). In this mixture, the mole fraction of nitrogen is y1 =0.958 . For nitrogen, $T_{c1}$ =126.1 K , $P_{c1}$ =3.394 MPa (33.94 bar ) , and w1 = 0.04 ; and for methane, $T_{c2}$ =190.6 K , $P_{c2}$ =4.604 MPa (46.04 bar ) , and w2 =0.011 . 
 
 ### Example 4.12  Vapor-Phase Composition of Benzene/Acetic Acid System
 Data of liquid-phase composition versus total pressure for a benzene(1)/acetic acid(2) system at 50°C, are presented in Table 4.11. Use the Gibbs-Duhem equation to estimate the composition of the vapor phase and the activity coefficients.
+
+![그림](T411.png)
 
 ### Example 4.13  Estimation of Parameters of the Wilson Equation 
 The temperature of the azeotrope for an ethanol(1)/n-octane(2) mixture at P = 760 mmHg, is 77 °C, and the composition at the azeotrope is 78% ethanol and 22% n-octane (% by weight). At the temperature of the azeotrope T, the vapor pressures of ethanol and n-octane may be obtained by the Antoine equation 
@@ -78,7 +84,9 @@ $\gamma_1 =exp[x_2^2(A_12+2(A_21 -A_12)x_1)], \gamma_2 =exp[x_1^2(A_21+2(A_12 -A
 where x1, is the mole fraction of chloroform, x2, is the mole fraction of 1,4-dioxane, and A12, and A21, are the Margules parameters for the binary system. The following relation can be applied to estimate A12, and A21: 
 $G^E/RT_{x_1,x_2}=A_{21}x_1+A_{12}x_2$
 
-where $G^E/RT$ , is the dimensionless excess Gibbs free energy. Table 4.12 shows data for $G^E/RT$ , obtained from the vapor-liquid equilibrium experiment. Estimate A12, and A21, and determine the value of x1, such that γ1 = γ2.  
+where $G^E/RT$ , is the dimensionless excess Gibbs free energy. Table below shows data for $G^E/RT$ , obtained from the vapor-liquid equilibrium experiment. Estimate A12, and A21, and determine the value of x1, such that γ1 = γ2.  
+
+![그림](T412.png)
 
 ### Example 4.15  Activity Coefficients by the UNIFAC Method
 Determine γ1, and γ2, for the binary system of diethylamine(1)/n-heptane(2) at T =308.15 K , when x1 =0.4 , and x2 =0.6 . The subgroups involved are indicated by the chemical formulas as Diethylamine(1): CH3 CH3CH CH3 CH3 , n-Heptane(2): CH3 (CH2)5 CH3 ,  
@@ -99,8 +107,10 @@ where A1 =13.8183, A2=13.8587, B1=2477.07, B2=2991.32, C1=233.21, C2=216.64 .
 
 ### Example 4.18  Bubble Point Estimation  
 Determine the bubble point temperature for a mixture of 32 mol% n-hexane, 31 mol%, n-heptane, 25 mol%, n-octane, and 12 mol %, n-nonane at 1.5 bar , total pressure. The vapor pressure of the pure species j, is given by the Antoine equation
-$log P_J^{sat} =A -\frac{B}{C+T-273.15} (T: K, $P_J^{sat}$: bar)$
-where the Antoine constants for each component are shown in Table 4.17.
+$log P_J^{sat} =A -\frac{B}{C+T-273.15}$ (T: K, $P_J^{sat} $: bar)
+where the Antoine constants for each component are shown in Table below.
+
+![그림](T417.png)
 
 ### Example 4.19  P and T Plots by Raoult’s Law
 A binary system of acetonitrile(1)/nitromethane(2) conforms closely to Raoult’s law. Vapor pressures for the pure species are given by the following Antoine equations: 
@@ -121,8 +131,10 @@ where T, is the temperature (K).
 (4) Estimate T, and xi, for P =101.33 kPa , and y1 =0.40  . 
 
 ### Example 4.21  Flash Evaporator
-A feed stream of an ideal four-component mixture is fed into a flash evaporator. The composition of the feed stream is given in Table 4.20 with the Antoine equation constants. The flash drum operates under high pressure, between 15 and 25 atm, with a feed stream at 50 °C. Estimate the percentage of the total feed at 50 °C, that is evaporated, α,( =V /F), and the corresponding mole fractions in the liquid and vapor streams fbubble point temperature,or P = 16, 18, 20, and 24 atm. 
+A feed stream of an ideal four-component mixture is fed into a flash evaporator. The composition of the feed stream is given in Table below with the Antoine equation constants. The flash drum operates under high pressure, between 15 and 25 atm, with a feed stream at 50 °C. Estimate the percentage of the total feed at 50 °C, that is evaporated, α,( =V /F), and the corresponding mole fractions in the liquid and vapor streams fbubble point temperature,or P = 16, 18, 20, and 24 atm. 
 Calculate the dew point and bubble point temperatures of the feed stream. 
+
+![그림](T420.png)
 
 ### Example 4.22  Bubble Point P for a Two-Component System 
 A liquid mixture contains chloroform (1) and ethanol (2) at 60°C. At equilibrium, 

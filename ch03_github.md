@@ -36,7 +36,7 @@ Estimate the viscosity of methane gas at 100°C.
 Estimate the heat capacity of liquid phenol at 150°C.
 
 ### Example 3.11 Heat Capacity of MEK 
-Use the Rowlinson-Bondi method to estimate the specific heat capacity of methyl ethyl ketone (MEK) at T = 100°C. Use $C_p^id$ = 1.671 J/(g K) = 120.496/(mol K), $T_c$ = 535.55 K, w = 0.323, $M_w$ = 72.11 g/mol , and R = 8.3143 J/(mol K)
+Use the Rowlinson-Bondi method to estimate the specific heat capacity of methyl ethyl ketone (MEK) at T = 100°C. Use $C_p^{id}$ = 1.671 J/(g K) = 120.496/(mol K), $T_c$ = 535.55 K, w = 0.323, $M_w$ = 72.11 g/mol , and R = 8.3143 J/(mol K)
 
 ### Example 3.12 Heat Capacity of Carbon Dioxide 
 Estimate the heat capacity of carbon dioxide at 300 ℃.
@@ -54,24 +54,30 @@ Estimate the ratio of the surface tension of benzene at T = 60°C.
 Use the corresponding-states correlation to estimate the surface tension of ethanethiol (ethyl mercaptan) at 30℃. For ethanethiol, $P_c$ = 54.9 bar, $T_c$ = 499 K, and $T_b$ =308.15 K
 
 ### Example 3.17 Vapor Pressure of Chloroform
-Table 3.3 shows the vapor pressure $P_v$ (mmHg) of chloroform as a function of temperature T(°C). 
+Table below shows the vapor pressure $P_v$ (mmHg) of chloroform as a function of temperature T(°C). 
 The following Antoine equation is known to be adequate to represent the vapor pressure of chloroform:
 $ln P_v=A-\frac{B}{T+C}$
 Determine Antoine parameters A, B,and C. Plot values of $P_v$ calculated by Antoine equation and $P_v$ data on the same graph for 0 ≤ T ≤ 150(°C) .  
+
+![그림](T303.png)
 
 ### Example 3.18 Vapor Pressure of Water
 Estimate the vapor pressure of water at T = 85°C. 
 
 ### Example 3.19 Vapor Pressure of 2,2,4-Trimethylpentane
-Table 3.4 shows the vapor pressure of liquid 2,2,4-trimethylpentane at various temperatures. 
-Use the data given in Table 3.4 to determine the parameters for the Antoine equation, the Riedel equation, and the Harlacher-Braun equation. 
+Table below shows the vapor pressure of liquid 2,2,4-trimethylpentane at various temperatures. 
+Use the data given in Table below to determine the parameters for the Antoine equation, the Riedel equation, and the Harlacher-Braun equation. 
+
+![그림](T304.png)
 
 ### Example 3.20 Vapor Pressure of Acetone
 Estimate the vapor pressure (MPa)of acetone at 273.15K. For acetone, $T_c$ = 508.1 K, $P_c$ = 4.6924 MPa, A and values of parameters of the Wagner equation are A = -7.670734, B = 1.965917, C = -2.445437, and D= -2.899873.  
 
 ### Example 3.21 Vapor Pressure of n-Propylbenzene
-Estimate the vapor pressure of n-propylbenzene (C (CH)5 (CH2)2 CH3) at 100 ℃ and 200 ℃ using the Rarey-Moller equation. The normal boiling point of n-propyl benzene is $T_b$ = 159.22°C. 
+Estimate the vapor pressure of n-propylbenzene $\ce{(C (CH)5 (CH2)2 CH3)} $ at 100 ℃ and 200 ℃ using the Rarey-Moller equation. The normal boiling point of n-propyl benzene is $T_b$ = 159.22°C. 
 Each group and corresponding frequency of n-propylbenzene molecules are shown in Table 3.5.  
+
+![그림](T305.png)
 
 ### Example 3.22 Vapor Pressure of Cyclohexanethiol 
 Estimate the vapor pressure of cyclohexanethiol at T = 100°C. Compare the result with the experimental value of $P_v$ = 132.9 mmHg.
